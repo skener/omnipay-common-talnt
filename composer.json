@@ -1,0 +1,33 @@
+{
+    "name": "omnipay/common-talnt",
+    "type": "library",
+    "keywords": [
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment",
+        "purchase"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-0": { "Omnipay\\Common\\" : "src/" },
+        "classmap": ["src/Omnipay/Omnipay.php"]
+    },
+    "require": {
+        "php": ">=5.3.2",
+        "guzzle/http": "~3.1",
+        "symfony/http-foundation": "~2.1"
+    },
+    "require-dev": {
+        "omnipay/tests": "~2.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        },
+        "gateways": [
+            "GoCardless"
+        ]
+    }
+}
